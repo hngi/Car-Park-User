@@ -16,14 +16,7 @@
            to-do-list
         </title>
         <style>
-            .header{
-                margin-top:10px;
-            }
-           
-           #link{
-float:right;
-
-        }
+    
         #success-or-failure{
             background: #35B729;
             height:300px;
@@ -93,50 +86,47 @@ color: rgba(51, 51, 51, 0.8);
            
           
 
-<div class="container">
-    <div class="header">
-        <img src="https://res.cloudinary.com/dycyotaya/image/upload/v1572282571/carparklogo_fisqie.jpg">
-   
-
-           
-    <nav class="navbar-expand-md navbar-light navbar-inverse" id="link">
-            <div id="nav-header2">
-                    <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                   <div class="dropbox">
-                <ul class="navbar-nav ml-auto">
-                       <li class="nav-item">
-                               <a href="selectSpot.html" class="nav-link active" id="link">My Parking Space</a>
-                       </li>
-                    <li class="nav-item">
-                        <a href="bookSpace.html" class="nav-link active" id="link">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                            <div class="dropdown">
-                                    <a class="btn btn-link dropdown-toggle" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Femi
+            <div class=" bg-white fixed-top">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+                       <div class="container">
+                          <a class="navbar-brand" href="index.html">
+                             <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                                style="width:120px;" alt="Car-Park logo">
+                          </a>
+                          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                             <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                             <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                   <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Femi
                                     </a>
-                                    <wrap class="dropdown-menu" aria-labelledby="dropmenu">
-                                      <a class="dropdown-item" href="#">name 1</a>
-                                      <a class="dropdown-item" href="#">name 2</a>
-                                    </wrap>
-                                  </div>
-                        </li>
-                            
-                </ul>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </nav>
             </div>
-            </div>
-        </nav>
-    </section>
-</div>
-</div>
 <div class="container" id="success-or-failure">
 <img src="https://res.cloudinary.com/dycyotaya/image/upload/v1572282495/vector_ml12u6.png" id="check">
 </div>
 <h4>Congratulations</h4>
 <h4>Your payment was successful</h4>
+
 
 
 <script>
