@@ -17,6 +17,7 @@
    <style>
       body {
          font-family: 'Roboto', sans-serif;
+         margin: 5px;
       }
 
       /* Styles what is inside the search form */
@@ -39,18 +40,110 @@
          display: flex;
          flex-direction:row;     
       }
+      .form-control {
+    display: block;
+    width: 100%;
+    height:40px;
+    padding: 0.375rem -12.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid blue;
+    border-radius: .25rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
       .has-search {
-        margin-right: 30px;
+        margin-right: 15px;
    
       }
       .searchbtn {
          height: 40px !important;
       }
+
+      .park-children {
+            display: flex;
+            padding: 0.5em 1em;
+            border: 1px solid #C4C4C4;
+            border-radius: 6px;
+            align-items: center;
+            background-color: #fff;
+        }
+        .save-searches {
+            background: #3684EB;
+            border-radius: 5px;
+            border: 0;
+            color: #fff;
+        }
+        #where-to-park {
+            display: flex;
+            height: 100%;
+            padding: 0.5em 1em;
+            border: 1px solid blue;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            justify-content: space-between;
+        }
+        input#TIME1, input#TIME2{
+            background-image: url("https://res.cloudinary.com/charlene04/image/upload/v1572793410/images_4_beghme.png");
+            background-size: 18%;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        #park-time {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            padding: 0.3em 1em;
+            border: 1px solid blue;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+             background-color: #fff;
+        }
+        .park-children:nth-child(2) {
+            border: 0px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+      button{
+          padding: 6.5px;
+    
+        }
+       
+        #save:hover {
+            background-color: rgb(0, 50, 116);
+        }
+        input[type="datetime-local"]{
+            border: none;
+            outline: none;
+        }
+        input[type="date"], input[type="time"]{
+            background: #fff;
+        }
+        input[type="date"]::-webkit-inner-spin-button{
+            display: none;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator{
+            opacity: 0;
+        }
+        input#DATE1:focus, input#TIME1:focus{
+            border: none;
+            outline: none;
+        }
+
       
       .main-content{
          display: flex;
          flex-direction:row;
-         margin-top: 120px;
+         margin-top: 130px;
       }
       .left-content{
          display: flex;
@@ -95,6 +188,10 @@
       }
         
       .spots{
+
+         overflow-y: scroll;
+        overflow-x: hidden;
+        height:400px;
          box-sizing: border-box;
          margin-top: 10px;
        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
@@ -107,7 +204,7 @@
          display: flex;
          flex-direction:row;
          box-sizing: border-box;
-         margin-top: 5px;
+         margin-top: 10px;
        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
       
       }
@@ -164,12 +261,12 @@
       .right-content{
          display: flex;
          flex: 1;
-         height:1080px;
+         height:523px;
       }
 
       .gmap{
          width: 100%;
-         height: 1065px;
+         height: 522px;
       }
 
 
@@ -262,42 +359,78 @@ a:hover {
 
 
  @media (max-width: 375px) {
-      .main-content{
-         display: flex;
-         flex-direction: column;
-      }
-      .left-content{
-         display: flex;
-         flex-direction: column;
-     }
-      
-      .right-content{
-         display:flex;
-      }
-      .gmap{
-         height:500px;
-      }
-
-      /* width */
-.spots::-webkit-scrollbar {
-  width: 10px;
-  height:300px;
-}
-
-/* Track */
-.spots::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
  
-/* Handle */
-.spots::-webkit-scrollbar-thumb {
-  background: #888; 
-}
+         .form-section{
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+  }
+   .form-group{
+       display: flex;
+       flex-direction: column; 
+       justify-content: center;
+        align-items: center;   
+      }
+   .form-control {
+   text-align:center;
+   font-size: 16px;
+   border-top-right-radius: .25rem;
+   border-bottom-right-radius: .25rem;
+   margin-bottom: 5px;
 
-/* Handle on hover */
-.spot::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    }
+     #park-time {
+          width: 100%;
+           font-size: 12px;
+          display: flex;
+          text-align: center;       
+          border-top-left-radius: .25rem;
+   border-bottom-left-radius: .25rem;
+            }
+            span {
+    padding-left: 3px;
+    font-size: 13px;
 }
+            .calendar-image{
+              padding-right:1px;
+            }
+      .btn{
+        width: 400px;
+        margin-top: 5px;
+      }
+         .sort1{
+          font-size:15px;
+         }
+         .main-content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+         }
+      .left-content{
+         margin-bottom: 10px;
+     }
+           
+      .right-content{
+        margin-bottom: 10px;
+      }
+       .spots{
+        height: auto;
+        font-size:16px;
+        overflow-y: hidden;
+        overflow-x: inherit;
+
+      }
+      .spot1{
+        margin-top: 10px;
+      }
+      .spot-content2{
+        padding-right: 5px;
+        font-size: 15px;
+      }
+      .spot1{
+        font-size:10px;
+      }
+
 .testimonials,
   .mt-5 {
     margin-top: 2em !important;
@@ -333,9 +466,52 @@ a:hover {
          }
 
 @media (max-width: 846px) {
+   
+         .form-section{
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+  }
+   .form-group{
+       display: flex;
+       flex-direction: column; 
+       justify-content: center;
+        align-items: center;   
+      }
+   .form-control {
+   text-align:center;
+   font-size: 16px;
+   border-top-right-radius: .25rem;
+   border-bottom-right-radius: .25rem;
+   margin-bottom: 5px;
+
+    }
+     #park-time {
+          width: 100%;
+           font-size: 12px;
+          display: flex;
+          text-align: center;       
+          border-top-left-radius: .25rem;
+   border-bottom-left-radius: .25rem;
+            }
+            span {
+    padding-left: 3px;
+    font-size: 15px;
+}
+            .calendar-image{
+              padding-right:1px;
+            }
+      .btn{
+        width: 400px;
+        margin-top: 5px;
+      }
+         .sort1{
+          font-size:15px;
+         }
          .main-content{
             display: flex;
             flex-direction: column;
+            margin-top: 200px;
          }
       .left-content{
          margin-bottom: 10px;
@@ -344,10 +520,20 @@ a:hover {
       .right-content{
         margin-bottom: 10px;
       }
-      .gmap{
-         height: 500px;
-      }
+       .spots{
+        height: auto;
+        font-size:16px;
+        overflow-y: hidden;
+        overflow-x: inherit;
 
+      }
+      .spot1{
+        margin-top: 10px;
+      }
+      .spot-content2{
+        padding-right: 5px;
+        font-size: 15px;
+      }
 .testimonials,
   .mt-5 {
     margin-top: 2em !important;
@@ -383,9 +569,53 @@ a:hover {
       }
 
       @media (max-width: 768px) {
+
+        
+         .form-section{
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+  }
+   .form-group{
+       display: flex;
+       flex-direction: column; 
+       justify-content: center;
+        align-items: center;   
+      }
+   .form-control {
+   text-align:center;
+   font-size: 16px;
+   border-top-right-radius: .25rem;
+   border-bottom-right-radius: .25rem;
+   margin-bottom: 5px;
+
+    }
+     #park-time {
+          width: 100%;
+           font-size: 12px;
+          display: flex;
+          text-align: center;       
+          border-top-left-radius: .25rem;
+   border-bottom-left-radius: .25rem;
+            }
+            span {
+    padding-left: 3px;
+    font-size: 13px;
+}
+            .calendar-image{
+              padding-right:1px;
+            }
+      .btn{
+        width: 400px;
+        margin-top: 5px;
+      }
+         .sort1{
+          font-size:15px;
+         }
          .main-content{
             display: flex;
             flex-direction: column;
+            margin-top: 200px;
          }
       .left-content{
          margin-bottom: 10px;
@@ -393,6 +623,20 @@ a:hover {
            
       .right-content{
         margin-bottom: 10px;
+      }
+       .spots{
+        height: auto;
+        font-size:16px;
+        overflow-y: hidden;
+        overflow-x: inherit;
+
+      }
+      .spot1{
+        margin-top: 10px;
+      }
+      .spot-content2{
+        padding-right: 5px;
+        font-size: 15px;
       }
       .gmap{
          height: 500px;
@@ -464,11 +708,36 @@ a:hover {
       
          <div class="form-section">
             <div class="form-group">
-               <input type="datetime-local" name="search" class="form-control d-inline-block" placeholder="Lekki Gardens">
-            </div>
-            <div class="d-inline-block buttons">
+              <input type="text" name="search" class="form-control d-inline-block" required="" placeholder="Lekki Gardens">
+              <div id="park-time">
+                        <div class="d-flex mr-3 park-time-flex-child" time1>
+                            <span class="calendar"><img class="calendar-image"
+                                    src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
+                                    alt="">
+                            </span>
+                           <span class="dates"> <p class="date1"><input id="DATE1" type="datetime-local" required style="width:200px;"></p></span>
+                        </div>
+                        <div class="mr-3" arrow>
+                            <img id="arrow"
+                                src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/arrow_forward_gls3w1.svg"
+                                alt="">
+                        </div>
+                        <div class="d-flex park-time-flex-child" time2>
+                            <span class="mr-2">
+                                <img class="calendar-image"
+                                    src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
+                                    alt="" style="padding-right: 3px">
+                            </span>
+                            <span class="dates"><p class="mr-2" id="date2"><input id="DATE2" type="datetime-local" name="" required style="width:200px;"></p></span>
+            
+                        </div>
+                    </div>
+                     <div class="d-inline-block buttons">
                <button type="button" class="btn btn-primary bg-primary text-white d-inline-block ml-3">Search</button>
             </div>
+                </div>
+            </div>
+           
          </div>
    </div>
              <!----Main Content starts here---->
@@ -494,22 +763,22 @@ a:hover {
                       </div>
                   
 
-                         <!----  FIRST SPOTS CONTENT--->
+                         <!----  SECOND SPOTS CONTENT--->
 
                
                      <div class="spot1">
                         <div class="image"><img src="https://res.cloudinary.com/kai123/image/upload/v1572968599/CarPark%20User/Rectangle_4667_1_egafsb.png"> </div>
-                        <div class="spot-content"><p>Palms Mail Parking Lot</p>3km away<br>
+                        <div class="spot-content"><p>Civic Towers Car Park </p>2km away<br>
                         <button type="button" class="spot-bttn"><span class="cash">#200</span> <span class="book"> Book Now</span></button></div>
                          <div class="spot-content2"><p>12 spots</p><span class="details">Details</span></div>
                       </div>
                   
-                             <!----  ThIRD SPOTS CONTENT--->
+                             <!----  THIRD SPOTS CONTENT--->
                          
                   
                      <div class="spot1">
                         <div class="image"><img src="https://res.cloudinary.com/kai123/image/upload/v1572968600/CarPark%20User/Rectangle_4667_3_tozjug.png"> </div>
-                        <div class="spot-content"><p>Palms Mail Parking Lot</p>3km away<br>
+                        <div class="spot-content"><p>Zenith Bank Car Park</p>1km away<br>
                         <button type="button" class="spot-bttn"><span class="cash">#200</span> <span class="book"> Book Now</span></button></div>
                          <div class="spot-content2"><p>12 spots</p><span class="details">Details</span></div>
                       </div>
@@ -520,7 +789,7 @@ a:hover {
                   
                      <div class="spot1">
                         <div class="image"><img src="https://res.cloudinary.com/kai123/image/upload/v1572968599/CarPark%20User/Rectangle_4667_4_lapawu.png"> </div>
-                        <div class="spot-content"><p>Palms Mail Parking Lot</p>3km away<br>
+                        <div class="spot-content"><p>Deloitte Car Park</p>3km away<br>
                         <button type="button" class="spot-bttn"><span class="cash">#200</span> <span class="book"> Book Now</span></button></div>
                          <div class="spot-content2"><p>12 spots</p><span class="details">Details</span></div>
                       </div>
@@ -531,7 +800,7 @@ a:hover {
                   
                      <div class="spot1">
                         <div class="image"><img src="https://res.cloudinary.com/kai123/image/upload/v1572968599/CarPark%20User/Rectangle_4667_5_er3oy1.png"> </div>
-                        <div class="spot-content"><p>Palms Mail Parking Lot</p>3km away<br>
+                        <div class="spot-content"><p>Regus Parking</p>2km away<br>
                         <button type="button" class="spot-bttn"><span class="cash">#200</span> <span class="book"> Book Now</span></button></div>
                          <div class="spot-content2"><p>12 spots</p><span class="details">Details</span></div>
                       </div>
@@ -542,7 +811,7 @@ a:hover {
                   
                      <div class="spot1">
                         <div class="image"><img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/muhd-asyraaf-hh3b5rAG8Jk-unsplash_1.png"> </div>
-                        <div class="spot-content"><p>Palms Mail Parking Lot</p>3km away<br>
+                        <div class="spot-content"><p>National Industrial Car Park</p>3km away<br>
                         <button type="button" class="spot-bttn"><span class="cash">#200</span> <span class="book"> Book Now</span></button></div>
                          <div class="spot-content2"><p>12 spots</p><span class="details">Details</span></div>
                       </div>
@@ -633,6 +902,24 @@ a:hover {
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
       </script>
+
+    <script>
+        var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            var hour = date.getHours();
+            var min = date.getMinutes();
+           month= (month < 10 ? "0" : "") + month;
+           day = (day < 10 ? "0" : "") + day;
+           hour = (hour < 10 ? "0" : "") + hour;
+           min = (min < 10 ? "0" : "") + min;
+            var today = year + "-" + month + "-" + day;
+            var displayTime = hour + ":" + min;
+          
+            document.getElementById("DATE1").min = today;
+            document.getElementById("DATE2").min = today;
+    </script>
 
    </body>
    </html>
