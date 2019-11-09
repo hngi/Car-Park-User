@@ -362,7 +362,7 @@
     .footer {
       background: #3684eb;
       height: fit-content;
-      margin-left: 0px;
+      /*margin-left: 0px;*/
       margin-top: 560px;
     }
 
@@ -377,7 +377,7 @@
     }
 
     .foot1 {
-      padding-left: 7.5rem;
+      padding-left: 3.5rem;
       padding-top: 5rem;
     }
 
@@ -521,9 +521,9 @@
       }*/
 
       .foot1 {
-        padding-left: 1em;
-        padding-top: 5em;
-        margin-bottom: 2em;
+        /*padding-left: 1em;*/
+        padding-top: 4rem;
+        margin-bottom: 2rem;
       }
 
       .para2 {
