@@ -114,6 +114,7 @@
       font-size: 16px;
       line-height: 26px;
       color: #514c65;
+
     }
 
     .hero-ky {
@@ -237,6 +238,7 @@
       margin-left: 0.5em;
       color: #ffbd49;
     }
+    
 
     /* SECTION 5 */
 
@@ -254,7 +256,6 @@
     .card-default>.card-heading {
       padding: 0;
       border-radius: 0;
-      color: #212121;
       border-bottom: 1px solid black;
       color: black;
     }
@@ -273,6 +274,10 @@
       width: 700px;
     }
 
+    .card-title .fa-plus {
+      color: #000;
+    }
+
     .card-title>a {
       display: block;
       padding: 15px;
@@ -287,6 +292,9 @@
 
     .card-list {
       border-bottom: 1px solid grey;
+      width: auto;
+      padding: 3px;
+      font-size: 14px;
     }
 
     .card-title>a:hover {
@@ -340,6 +348,7 @@
     .blockquote-footer::before {
       content: " ";
     }
+    
 
     .fa-plus {
       color: #3684eb;
@@ -632,8 +641,16 @@
       }
 
       .card-title {
-        width: 350px;
+        width: 400px;
     
+      }
+
+      .card-body {
+        width: 400px;
+      }
+
+      .card-header {
+        width: 400px;
       }
 
 
