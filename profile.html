@@ -6,40 +6,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.11.2/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/profile.css">
         <link rel="stylesheet" href="CSS/car-park-search.css" />
     <title>List of space</title>
+    <style>
+        body, html{
+            margin:0;
+            padding: 0;
+        }
+    .carousel-card{
+        border: 1px solid rgba(119, 119, 119, 0.3);
+box-sizing: border-box;
+border-radius: 8px;
+margin:35px;
+    }
+    @media only screen and (max-width: 1200px){
+        .carousel-card{
+            margin:20px;
+        }
+    }
+    @media only screen and (max-width: 600px){
+       .view-more-con{
+           float:left;
+       }
+    }
+  
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light pt-4">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img
-                src="https://res.cloudinary.com/deksm5bm1/image/upload/v1571905915/Group_9641.svg" width="80%"
-                alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon mx-0"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active mr-4">
-                    <a class="nav-link" href="support.html">Support <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572377258/icons8-help-100_ktgpxn.svg" alt=""><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <button type="button" class="btns btn-labels download-btn">
-                        <span class="btn-label"><img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376816/icons8-download-100_2_vjq0hw.svg" width="90%" alt=""></span>Get the App</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+        <nav class="navbar navbar-expand-lg fixed-top  navbar-light pt-2">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img
+                            src="https://res.cloudinary.com/deksm5bm1/image/upload/v1571905915/Group_9641.svg" width="80%"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mx-0"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active mr-4">
+                                <a class="nav-link" href="support.html">Support <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572377258/icons8-help-100_ktgpxn.svg" alt=""><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btns btn-labels download-btn">
+                                    <span class="btn-label"><img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376816/icons8-download-100_2_vjq0hw.svg" width="90%" alt=""></span>Get the App</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
 <main>
-    <div class="container mt-5">
+    <div class="container mt-5 pt-5">
         <div class="row">
             <div class="col-sm-6 mt-5">
                 <h1 class="heading">Find packing spaces <br> around your location in <br> no time.</h1>
@@ -61,7 +84,7 @@
     </div>
 </main>
 <main>
-    <div class="container-fluid section-2 text-center mt-5">
+    <div class="container-fluid section-2 text-center mt-4">
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="heading">We care about your comfort <br> and the safety of your vehicle</h1>
@@ -92,7 +115,7 @@
 </main>
 
 <main>
-    <div class="container mt-5 center">
+    <div class="container mt-5 pt-2 center">
         <div class="row">
             <div class="col-sm-6">
                 <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572366462/Group_9734_aohg4n.png" width="70%" alt="">
@@ -108,7 +131,7 @@
 </main>
 
 <main>
-    <div class="container mt-3 center">
+    <div class="container mt-3 pt-2 center">
         <div class="row">
             <div class="col-sm-6 sec-margin">
                 <h1 class="heading">Park Safely</h1>
@@ -144,10 +167,23 @@
 
 
 <main>
-    <div class="container center">
+    <div class="container mt-3 center">
         <div class="head__section">
-            <h1 class="heading">Our Parking Spaces</h1>
-            <p class="p1">Get parking within meters of your destinations <span class="view">View all spaces <span><img src="https://res.cloudinary.com/meritiyke/image/upload/v1572388962/icons8-more-than-100_hzzyyd.svg" alt="" class="img-fluid"></span></span></p>
+            <div class="row">
+                <div class="col-sm-6">
+                        <h1 class="heading">Our Parking Spaces</h1>
+                        <p class="p1">Get parking within meters of your destinations </p>
+                </div>
+                <div class="col-sm-6 view-more-con">
+                       <a href="#" style="float: right; color:#2F4B6E;">View all spaces<span>
+                            <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572388962/icons8-more-than-100_hzzyyd.svg" alt=""  class="img-fluid view-more">
+
+                        </span>
+                    </a>
+                    </div>
+            </div>
+          
+            
         </div>
     </div>
    
@@ -169,7 +205,7 @@
                 <a href="bookSpace.html">Book now <span><img src="https://res.cloudinary.com/meritiyke/image/upload/v1572390459/arrow_gudhkz.png" alt="" class="img-fluid"></span></a>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row">
             <div class="col-sm-4 card-body ">
                 <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572512931/Image_4_aofjza.png" class="img-park img-fluid" alt="">
                 <h4 class="p1">Stadium Parking Lot</h4>
@@ -207,35 +243,117 @@
     </div>
 </main>
 <main>
-    <div class="container-fluid">
-        <h1 class="heading text-center">Meet Satisfied Customers</h1>
-        <p class="p1 text-center"> Read what our many happy users have to say about <br> our parking solution</p>
-        <div class="container customer">
-            <div class="card customer-a">
-                <div class="card-body ">
-                    <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376484/Mask_Group_hro8b2.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
-                    <p>Thought it was a joke. I booked, I paid and now I <br> have my own 2months purchased spot</p>
-                    <span class="p1">Bode. A</span>
-                    <p>Investment Analyst</p>
+            <h1 class="heading text-center">Meet Satisfied Customers</h1>
+            <p class="p1 text-center"> Read what our many happy users have to say about <br> our parking solution</p>
+
+    <!--carousel starts from here-->
+    <div class="container">
+    <div id="carouselexample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <div class="row">
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-a">
+                                                <div class="card-body ">
+                                                        <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376484/Mask_Group_hro8b2.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                        <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                        <p>Thought it was a joke. I booked, I paid and now I <br> have my own 2months purchased spot</p>
+                                                        <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                        <span class="p1">Bode.A</span>
+                                                        <p>Investment Analyst</p>
+                                                    </div>
+                                            </div>
+                                </div>
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-b">
+                                        <div class="card-body">
+                                                <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376401/Group_92_y4lidv.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                <p>Intuitive solution guys. Coming to Accra, Ghana soon?</p>
+                                                <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                <span class="p1">Sandra. F</span>
+                                                <p>Investment Analyst</p>
+                                            </div> 
+                                            </div>
+                                </div>
+                            </div> 
+                 </div>
+                <div class="carousel-item">
+                        <div class="row">
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-a">
+                                                <div class="card-body ">
+                                                        <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376484/Mask_Group_hro8b2.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                        <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                        <p>Thought it was a joke. I booked, I paid and now I <br> have my own 2months purchased spot</p>
+                                                        <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                        <span class="p1">Bode.A</span>
+                                                        <p>Investment Analyst</p>
+                                                    </div> 
+                                            </div>
+                                </div>
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-b">
+                                        <div class="card-body">
+                                                <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376401/Group_92_y4lidv.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                <p>Intuitive solution guys. Coming to Accra, Ghana soon?</p>
+                                                <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                <span class="p1">Sandra. F</span>
+                                                <p>Investment Analyst</p>
+                                            </div> 
+                                            </div>
+                                </div>
+                            </div> 
+                </div>
+                <div class="carousel-item">
+                        <div class="row">
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-a">
+                                                <div class="card-body ">
+                                                        <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376484/Mask_Group_hro8b2.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                        <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                        <p>Thought it was a joke. I booked, I paid and now I <br> have my own 2months purchased spot</p>
+                                                        <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                        <div>
+                                                                <span class="p1">Bode.A</span>
+                                                                <p>Investment Analyst</p>
+                                                        </div>
+                                                    </div> 
+                                            </div>
+                                </div>
+                                <div class="col-sm-5 carousel-card">
+                                        <div class="customer-b">
+                                        <div class="card-body">
+                                                <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376401/Group_92_y4lidv.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
+                                                <span><i class="fa fa-quote-left" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></span>
+                                                <p>Intuitive solution guys. Coming to Accra, Ghana soon?</p>
+                                                <p style="float:right;"><i class="fa fa-quote-right" style="font-size:40px; color:#3B2E52; opacity: 0.46;"></i></p><br/>
+                                                <div>
+                                                        <span class="p1">Sandra. F</span>
+                                                        <p>Investment Analyst</p>
+                                                </div>
+                                               
+                                            </div> 
+                                            </div>
+                                </div>
+                            </div> 
+                            
                 </div>
             </div>
             
-            <div class="card customer-b">
-                <div class="card-body">
-                    <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572376401/Group_92_y4lidv.png" alt="" width="60" height="60" class="img-fluid rounded-circle">
-                    <p>Intuitive solution guys. Coming to Accra, Ghana soon?</p>
-                    <span class="p1">Sandra. F</span>
-                    <p>Investment Analyst</p>
-                </div>     
-            </div>
-            <div class="sign">
-                    <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572379182/icons8-more-than-100_1_httc7u.svg" alt="" class="img-fluid rounded-circle">
-                    <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572379252/icons8-more-than-100_1_kkqjqm.png" alt="" class="img-fluid rounded-circle">   
-            </div>
         </div>
-        
+        <div style="text-align:center;" >
+                <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572379182/icons8-more-than-100_1_httc7u.svg" alt="" class="img-fluid rounded-circle">
+                <img src="https://res.cloudinary.com/meritiyke/image/upload/v1572379252/icons8-more-than-100_1_kkqjqm.png" alt="" class="img-fluid rounded-circle">   
+        </div>
+       
+<!--carousel ends here-->
+        </div>
     </div>
 </main>
+
+<!--
 <footer>
     <div class="bg-dark text-light py-5 container-fluid footer" id="footer">
         <div class="mx-5 sub1">
@@ -254,7 +372,7 @@
             <ul>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="http://car-park.ga:7000">Admin</a></li>
+                <li><a href="http://car-park.ga">Admin</a></li>
             </ul>   
         </div>
         <div class="mx-5 sub4">
@@ -272,6 +390,60 @@
         </div>
     </div>
 </footer>
+-->
+
+
+   <!--Footer-->
+   <footer class="footer mt-5">
+        <div class="row container-fluid ">
+          <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+            <h1 class="foot-one">
+              Finding a parking space should be easy, convenient and not
+              stressful.
+            </h1>
+            <p class="foot-paragraph mb-4">
+              Download the carpark app today and find secure spaces to park your
+              vehicles .
+            </p>
+            <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+              <div>
+                <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                  alt="Google Playstore" />
+                Download App
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+            <div>
+              <div class="eclipse2">
+                <img class="hero-img img-fluid"
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                  alt="Android Phone" />
+              </div>
+              <img class="hero-dots"
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+                alt="dots" />
+            </div>
+          </div>
+        </div>
+        <hr class="footer" />
+        <div class="footer-links container pr-3 pl-3">
+            <a href="index.html">
+                <img class="foot-brand"
+                src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                  alt="Logo"
+                />
+              </a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="partner.html">Become a Partner</a>
+          <a href="http://car-park.ga">Admin</a>
+          <a href="support.html">Support</a>
+          <a href="termsOfService.html">Service Agreement</a>
+          <a href="termsOfService.html">Privacy Policy</a>
+          <a href="">&#9400;HNG Internship, 2019 </a>
+        </div>
+      </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
